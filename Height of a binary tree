@@ -1,0 +1,10 @@
+class Solution {
+  public:
+    int height(Node* node) {
+        // base case
+        if(!node) return -1;
+        //recursive case;
+        return max(height(node ->left),height(node ->right)) + 1;
+        
+    }
+};
